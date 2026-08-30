@@ -7,6 +7,12 @@ describe("medicine normalization", () => {
     expect(normalizeBrandQuery("augmentin625")[0]?.brandName).toBe("Augmentin 625");
     expect(normalizeBrandQuery("dolo")[0]?.salts[0]?.salt).toBe("Paracetamol");
     expect(normalizeBrandQuery("combiflam")[0]?.salts).toHaveLength(2);
+    expect(normalizeBrandQuery("ecosprin")[0]?.salts[0]?.salt).toBe("Aspirin");
+    expect(normalizeBrandQuery("pantocid 40")[0]?.salts[0]?.strength).toBe("40 mg");
+    expect(normalizeBrandQuery("crocin")[0]?.salts[0]?.amountPerUnitMg).toBe(500);
+    expect(normalizeBrandQuery("brufen")[0]?.salts[0]?.salt).toBe("Ibuprofen");
+    expect(normalizeBrandQuery("amoxyclav")[0]?.salts).toHaveLength(2);
+    expect(normalizeBrandQuery("azee")[0]?.salts[0]?.salt).toBe("Azithromycin");
   });
 });
 

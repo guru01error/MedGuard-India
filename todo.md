@@ -12,7 +12,7 @@
 - [x] Add constrained AI assistant limited to resolved ingredients and displayed evidence
 - [x] Add vitest coverage for normalization, deterministic rules, dose totals, predictive labeling, and assistant scope
 - [x] Run typecheck, tests, and visual verification; fix any issues
-- [ ] Save final project checkpoint for delivery
+- [x] Save final project checkpoint for delivery
 - [x] Replace generic predictive placeholder with a transparent 1024-bit fingerprint-style heuristic score and confidence label
 - [x] Add a selected-medicine risk matrix with severity and source-type indicators
 - [x] Add explicit analysis loading, error, and zero-findings states
@@ -22,3 +22,13 @@
 - [x] Complete keyboard combobox behavior with active option, Enter, Escape, and focus handling
 - [x] Propagate predictive source labels into matrix cells for unmapped pairs
 - [x] Add focus-aware combobox open and close lifecycle for keyboard-only use
+- [x] Inspect guru01error/MedGuard-India repository structure and current branch
+- [x] Integrate the validated MedGuard India project into the repository without removing unrelated content
+- [x] Run repository validation and review the integration diff
+- [x] Commit and push the integrated project to guru01error/MedGuard-India
+- [x] Expand local medicine dataset with additional regional Indian brands and verified composition metadata
+- [x] Add normalization tests for new regional brand aliases and fixed-dose combinations
+- [x] Run typecheck, tests, and catalog UI verification
+- [ ] Save checkpoint for expanded medicine catalog
+- [x] Add a broader set of non-paracetamol regional/common Indian brand records across varied categories and at least one additional fixed-dose combination
+- [x] Verify every new record against an opened pharmacy or manufacturer reference and document exact composition/manufacturer evidence
