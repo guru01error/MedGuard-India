@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1788113182446,
+      "tag": "0000_simple_turbo",
+      "breakpoints": true
+    }
+  ]
+}
