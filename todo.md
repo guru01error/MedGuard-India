@@ -1,0 +1,24 @@
+# Project TODO
+
+- [x] Build responsive MedGuard India clinical dashboard shell with elegant, trustworthy visual language
+- [x] Add multi-medicine brand search and selection for Indian aliases and specified example medicines
+- [x] Add local rich medicine dataset with brands, manufacturers, categories, active salts, strengths, synonyms, SMILES, and InChIKeys
+- [x] Normalize selected brands into active salts and display resolved composition to the user
+- [x] Implement deterministic interaction rules for CYP450, cumulative toxicity, bleeding, renal-clearance competition, and QT prolongation
+- [x] Add daily quantity entry and overlapping-ingredient dose totals with paracetamol threshold warning
+- [x] Add transparent fallback predictive DDI heuristic with fingerprint-style confidence labeling, clearly separated from curated evidence
+- [x] Add risk matrix, detailed safety cards, source-type labels, affected salts, mechanisms, guidance, and urgent-care disclaimer
+- [x] Add loading, empty, error, responsive, and accessible states
+- [x] Add constrained AI assistant limited to resolved ingredients and displayed evidence
+- [x] Add vitest coverage for normalization, deterministic rules, dose totals, predictive labeling, and assistant scope
+- [x] Run typecheck, tests, and visual verification; fix any issues
+- [ ] Save final project checkpoint for delivery
+- [x] Replace generic predictive placeholder with a transparent 1024-bit fingerprint-style heuristic score and confidence label
+- [x] Add a selected-medicine risk matrix with severity and source-type indicators
+- [x] Add explicit analysis loading, error, and zero-findings states
+- [x] Upgrade brand search to an accessible combobox/listbox pattern
+- [x] Add a constrained assistant endpoint or contract with tests proving scope boundaries
+- [x] Show source-type indicators directly in risk-matrix cells and provide a legend
+- [x] Complete keyboard combobox behavior with active option, Enter, Escape, and focus handling
+- [x] Propagate predictive source labels into matrix cells for unmapped pairs
+- [x] Add focus-aware combobox open and close lifecycle for keyboard-only use
