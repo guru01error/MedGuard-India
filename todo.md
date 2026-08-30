@@ -29,6 +29,6 @@
 - [x] Expand local medicine dataset with additional regional Indian brands and verified composition metadata
 - [x] Add normalization tests for new regional brand aliases and fixed-dose combinations
 - [x] Run typecheck, tests, and catalog UI verification
-- [ ] Save checkpoint for expanded medicine catalog
+- [x] Save checkpoint for expanded medicine catalog
 - [x] Add a broader set of non-paracetamol regional/common Indian brand records across varied categories and at least one additional fixed-dose combination
 - [x] Verify every new record against an opened pharmacy or manufacturer reference and document exact composition/manufacturer evidence
