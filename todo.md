@@ -38,6 +38,8 @@
 - [x] Run typecheck, tests, and visual catalog verification
 - [x] Push the validated expansion to guru01error/MedGuard-India
 - [ ] Save a checkpoint for the southern-brand catalog expansion
-- [ ] Add at least one verified Tamil Nadu brand and one verified Kerala brand with active salts, strengths, aliases, identifiers, and source URLs
-- [ ] Document opened source evidence for the Tamil Nadu and Kerala additions
-- [ ] Add normalization tests for the additional southern-state aliases and rerun validation
+- [x] Add at least one verified Tamil Nadu brand and one verified Kerala brand with active salts, strengths, aliases, identifiers, and source URLs
+- [x] Document opened source evidence for the Tamil Nadu and Kerala additions
+- [x] Add normalization tests for the additional southern-state brand aliases and rerun validation
+- [ ] Replace the generic KSDP Kerala entry with a product-level brand-verified Kerala medicine record
+- [ ] Update Kerala provenance notes and normalization tests for the replacement brand

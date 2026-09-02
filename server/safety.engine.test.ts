@@ -18,7 +18,9 @@ describe("medicine normalization", () => {
     expect(normalizeBrandQuery("toprazol d")[0]?.salts).toHaveLength(2);
     expect(normalizeBrandQuery("toprazol d")[0]?.region).toBe("Karnataka");
     expect(normalizeBrandQuery("medomol")[0]?.salts[0]?.salt).toBe("Paracetamol");
-    expect(normalizeBrandQuery("ksdp azithro 500")[0]?.region).toBe("Kerala");
+    expect(normalizeBrandQuery("keramycin")[0]?.salts[0]?.salt).toBe("Azithromycin");
+    expect(normalizeBrandQuery("keramycin")[0]?.salts[0]?.strength).toBe("500 mg");
+    expect(normalizeBrandQuery("keramycin")[0]?.region).toBe("Kerala");
   });
 });
 
