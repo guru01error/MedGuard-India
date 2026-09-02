@@ -41,5 +41,8 @@
 - [x] Add at least one verified Tamil Nadu brand and one verified Kerala brand with active salts, strengths, aliases, identifiers, and source URLs
 - [x] Document opened source evidence for the Tamil Nadu and Kerala additions
 - [x] Add normalization tests for the additional southern-state brand aliases and rerun validation
-- [ ] Replace the generic KSDP Kerala entry with a product-level brand-verified Kerala medicine record
-- [ ] Update Kerala provenance notes and normalization tests for the replacement brand
+- [x] Replace the generic KSDP Kerala entry with a product-level brand-verified Kerala medicine record
+- [x] Update Kerala provenance notes and normalization tests for the replacement brand
+- [ ] Add a direct product-level Kerala source showing the final brand name, active ingredient, and strength together
+- [ ] Replace or confirm Keramycin only from direct product-level evidence and update its provenance note
+- [ ] Rerun final normalization tests, push the corrected record, and checkpoint the project
