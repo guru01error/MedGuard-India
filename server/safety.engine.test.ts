@@ -17,6 +17,8 @@ describe("medicine normalization", () => {
     expect(normalizeBrandQuery("omez20")[0]?.salts[0]?.salt).toBe("Omeprazole");
     expect(normalizeBrandQuery("toprazol d")[0]?.salts).toHaveLength(2);
     expect(normalizeBrandQuery("toprazol d")[0]?.region).toBe("Karnataka");
+    expect(normalizeBrandQuery("medomol")[0]?.salts[0]?.salt).toBe("Paracetamol");
+    expect(normalizeBrandQuery("ksdp azithro 500")[0]?.region).toBe("Kerala");
   });
 });
 

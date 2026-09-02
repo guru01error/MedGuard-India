@@ -32,9 +32,12 @@
 - [x] Save checkpoint for expanded medicine catalog
 - [x] Add a broader set of non-paracetamol regional/common Indian brand records across varied categories and at least one additional fixed-dose combination
 - [x] Verify every new record against an opened pharmacy or manufacturer reference and document exact composition/manufacturer evidence
-- [ ] Add verified southern-India pharmaceutical brands across Karnataka, Tamil Nadu, Telangana/Andhra Pradesh, and Kerala markets
-- [ ] Document opened source references and exact compositions for every new southern-brand record
-- [ ] Add normalization tests for the new southern-brand aliases and combinations
-- [ ] Run typecheck, tests, and visual catalog verification
-- [ ] Push the validated expansion to guru01error/MedGuard-India
+- [x] Add verified southern-India pharmaceutical brands across Karnataka, Tamil Nadu, Telangana/Andhra Pradesh, and Kerala markets
+- [x] Document opened source references and exact compositions for every new southern-brand record
+- [x] Add normalization tests for the new southern-brand aliases and combinations
+- [x] Run typecheck, tests, and visual catalog verification
+- [x] Push the validated expansion to guru01error/MedGuard-India
 - [ ] Save a checkpoint for the southern-brand catalog expansion
+- [ ] Add at least one verified Tamil Nadu brand and one verified Kerala brand with active salts, strengths, aliases, identifiers, and source URLs
+- [ ] Document opened source evidence for the Tamil Nadu and Kerala additions
+- [ ] Add normalization tests for the additional southern-state aliases and rerun validation
