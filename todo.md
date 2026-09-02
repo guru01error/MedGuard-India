@@ -43,6 +43,6 @@
 - [x] Add normalization tests for the additional southern-state brand aliases and rerun validation
 - [x] Replace the generic KSDP Kerala entry with a product-level brand-verified Kerala medicine record
 - [x] Update Kerala provenance notes and normalization tests for the replacement brand
-- [ ] Add a direct product-level Kerala source showing the final brand name, active ingredient, and strength together
-- [ ] Replace or confirm Keramycin only from direct product-level evidence and update its provenance note
-- [ ] Rerun final normalization tests, push the corrected record, and checkpoint the project
+- [x] Add a direct product-level Kerala source showing the final brand name, active ingredient, and strength together
+- [x] Replace or confirm Keramycin only from direct product-level evidence and update its provenance note
+- [x] Rerun final normalization tests, push the corrected record, and checkpoint the project
