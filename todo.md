@@ -32,3 +32,17 @@
 - [x] Save checkpoint for expanded medicine catalog
 - [x] Add a broader set of non-paracetamol regional/common Indian brand records across varied categories and at least one additional fixed-dose combination
 - [x] Verify every new record against an opened pharmacy or manufacturer reference and document exact composition/manufacturer evidence
+- [x] Add verified southern-India pharmaceutical brands across Karnataka, Tamil Nadu, Telangana/Andhra Pradesh, and Kerala markets
+- [x] Document opened source references and exact compositions for every new southern-brand record
+- [x] Add normalization tests for the new southern-brand aliases and combinations
+- [x] Run typecheck, tests, and visual catalog verification
+- [x] Push the validated expansion to guru01error/MedGuard-India
+- [x] Save a checkpoint for the southern-brand catalog expansion
+- [x] Add at least one verified Tamil Nadu brand and one verified Kerala brand with active salts, strengths, aliases, identifiers, and source URLs
+- [x] Document opened source evidence for the Tamil Nadu and Kerala additions
+- [x] Add normalization tests for the additional southern-state brand aliases and rerun validation
+- [x] Replace the generic KSDP Kerala entry with a product-level brand-verified Kerala medicine record
+- [x] Update Kerala provenance notes and normalization tests for the replacement brand
+- [x] Add a direct product-level Kerala source showing the final brand name, active ingredient, and strength together
+- [x] Replace or confirm Keramycin only from direct product-level evidence and update its provenance note
+- [x] Rerun final normalization tests, push the corrected record, and checkpoint the project

@@ -13,6 +13,15 @@ describe("medicine normalization", () => {
     expect(normalizeBrandQuery("brufen")[0]?.salts[0]?.salt).toBe("Ibuprofen");
     expect(normalizeBrandQuery("amoxyclav")[0]?.salts).toHaveLength(2);
     expect(normalizeBrandQuery("azee")[0]?.salts[0]?.salt).toBe("Azithromycin");
+    expect(normalizeBrandQuery("allercet l")[0]?.salts[0]?.salt).toBe("Levocetirizine");
+    expect(normalizeBrandQuery("omez20")[0]?.salts[0]?.salt).toBe("Omeprazole");
+    expect(normalizeBrandQuery("toprazol d")[0]?.salts).toHaveLength(2);
+    expect(normalizeBrandQuery("toprazol d")[0]?.region).toBe("Karnataka");
+    expect(normalizeBrandQuery("medomol")[0]?.salts[0]?.salt).toBe("Paracetamol");
+    expect(normalizeBrandQuery("keramycin capsule")[0]?.salts[0]?.salt).toBe("Chloramphenicol");
+    expect(normalizeBrandQuery("keramycin capsule")[0]?.salts[0]?.strength).toBe("250 mg");
+    expect(normalizeBrandQuery("ksdp keramycin")[0]?.salts[0]?.salt).toBe("Azithromycin");
+    expect(normalizeBrandQuery("ksdp keramycin")[0]?.region).toBe("Kerala");
   });
 });
 
