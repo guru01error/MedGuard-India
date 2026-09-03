@@ -46,3 +46,14 @@
 - [x] Add a direct product-level Kerala source showing the final brand name, active ingredient, and strength together
 - [x] Replace or confirm Keramycin only from direct product-level evidence and update its provenance note
 - [x] Rerun final normalization tests, push the corrected record, and checkpoint the project
+- [x] Refine desktop dashboard hierarchy, spacing, cards, and visual polish
+- [x] Improve mobile layout, responsive stacking, touch targets, and horizontal overflow behavior
+- [x] Improve loading, empty, analysis, and risk-result visual states
+- [x] Preserve keyboard accessibility and safety disclaimer visibility across viewports
+- [x] Run typecheck, tests, and desktop/mobile screenshot verification
+- [x] Push the refined UI to guru01error/MedGuard-India
+- [ ] Save a checkpoint for the refined desktop and mobile UI
+- [x] Add explicit empty-state guidance and quick-start examples in the medicine workspace
+- [x] Add richer loading and analysis-progress state treatments
+- [x] Add stronger error and no-findings state treatments for safety results
+- [x] Re-run desktop/mobile screenshots after state-specific UI updates
