@@ -51,8 +51,17 @@
 - [x] Improve loading, empty, analysis, and risk-result visual states
 - [x] Preserve keyboard accessibility and safety disclaimer visibility across viewports
 - [x] Run typecheck, tests, and desktop/mobile screenshot verification
-- [ ] Push the refined UI to guru01error/MedGuard-India and save a checkpoint
+- [x] Push the refined UI to guru01error/MedGuard-India
+- [x] Save a checkpoint for the refined desktop and mobile UI
 - [x] Add explicit empty-state guidance and quick-start examples in the medicine workspace
 - [x] Add richer loading and analysis-progress state treatments
 - [x] Add stronger error and no-findings state treatments for safety results
 - [x] Re-run desktop/mobile screenshots after state-specific UI updates
+- [x] Create a PDF reference of project modules, datasets, safety rules, sources, and limitations
+- [x] Inspect the generated PDF for readability and complete the PDF deliverable
+- [x] Render representative PDF pages and visually inspect title, tables, and references for readability
+- [x] Inspect the attached PDF content and map it into website sections
+- [x] Build a responsive website version of the MedGuard India reference content
+- [x] Add accessible navigation, interactive module/dataset sections, safety evidence cards, and references
+- [x] Run typecheck, tests, and desktop/mobile visual verification
+- [ ] Push the website update to guru01error/MedGuard-India and save a checkpoint
