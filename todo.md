@@ -65,4 +65,21 @@
 - [x] Add accessible navigation, interactive module/dataset sections, safety evidence cards, and references
 - [x] Run typecheck, tests, and desktop/mobile visual verification
 - [x] Push the website update to guru01error/MedGuard-India
-- [ ] Save a checkpoint for the PDF-derived website update
+- [x] Save a checkpoint for the PDF-derived website update
+- [x] Define India-only inclusion and exclusion rules for the local catalog
+- [x] Curate an India-market dataset with Tata 1mg primary references and Indian product-level sources
+- [x] Retain only India-market records with documented provenance and normalized salts and chemical identifiers
+- [x] Update provenance notes and normalization tests for the Tata 1mg records
+- [x] Run typecheck, tests, and catalog UI verification
+- [x] Push the India-only catalog update to guru01error/MedGuard-India
+- [ ] Save a checkpoint for the India-market catalog update
+- [x] Audit every retained medicine record for direct Tata 1mg or documented Indian product provenance
+- [x] Remove or reject records without direct Tata 1mg or explicitly verified India-market composition
+- [x] Add sourceUrls to every retained record and assert provenance in tests
+- [x] Update catalog counts, source documentation, and UI copy after cleanup
+- [x] Align every retained brandName with the exact product named by its source URL
+- [x] Re-audit retained brands for source-name consistency and remove mismatches
+- [x] Compute active-salt count from the actual catalog and update the website metric
+- [ ] Create a deterministic brand-to-source audit report covering every retained record
+- [ ] Add automated validation that checks the catalog audit report and prevents provenance-name drift
+- [ ] Push the post-cleanup India-market catalog changes to guru01error/MedGuard-India and record the commit hash

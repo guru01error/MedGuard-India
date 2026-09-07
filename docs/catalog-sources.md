@@ -1,6 +1,6 @@
 # Expanded catalogue sources
 
-The additional brand records in `shared/medicines.ts` are locally curated prototype entries. Product composition and manufacturer details were checked against the following Indian pharmacy references on 30 August 2026. The catalogue is not a substitute for checking the current product label, because formulations and manufacturers can change.
+The additional brand records in `shared/medicines.ts` are curated India-market prototype entries. Product composition and manufacturer details were checked against the following Indian pharmacy references on 30 August 2026. The catalogue is not a substitute for checking the current product label, because formulations and manufacturers can change.
 
 | Brand record | Composition checked | Reference |
 | --- | --- | --- |
@@ -19,3 +19,9 @@ Chemical identifiers are included as PubChem-compatible identifiers for the reso
 The opened PharmEasy page for **Brufen 400** lists Ibuprofen 400 mg and Abbott India Ltd. The opened PharmEasy page for **Amoxyclav 625** lists Amoxycillin/Amoxicillin 500 mg plus Clavulanic Acid 125 mg and Abbott Healthcare Pvt Ltd. The opened Apollo page for **Azee 500** lists Azithromycin 500 mg and Cipla Ltd. The opened Apollo page for **Ecosprin 75** lists Aspirin 75 mg and USV Pvt Ltd. The opened PharmEasy page for **Pantocid 40** lists Pantoprazole 40 mg and Sun Pharma.
 
 Additional candidates verified but not yet added to the application include **Shelcal 500** (calcium plus cholecalciferol; Torrent Pharmaceuticals), **Glycomet-GP 1** (Glimepiride 1 mg plus Metformin Hydrochloride 500 mg; USV Pvt Ltd), and **Thyronorm 50** (Thyroxine sodium 50 mcg; Abbott India Ltd). Their inclusion is deferred until the required chemical identifier fields are independently confirmed.
+
+## India-only catalog policy
+
+The catalog now uses an India-market-only taxonomy. Records are retained as Indian-market medicines when their brand, composition, and strength are documented for sale in India. Tata 1mg product pages are the primary reference for newly added and re-verified records, while other Indian product-level references are retained where Tata 1mg does not expose a matching page. Records remain labeled as `India-market curated dataset` or `Tata 1mg India-market reference`; this does not claim a complete Tata 1mg export.
+
+The application stores only the minimal metadata required for brand normalization and safety prototyping. It does not copy Tata 1mg prices, reviews, proprietary ranking data, or the full site catalog.

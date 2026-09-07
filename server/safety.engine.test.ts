@@ -1,10 +1,18 @@
 import { describe, expect, it } from "vitest";
-import { brands, normalizeBrandQuery } from "../shared/medicines";
+import { brands, normalizeBrandQuery, uniqueSaltCount } from "../shared/medicines";
+import { catalogAudit, validateCatalogAudit } from "../shared/catalog-audit";
 import { analyzeSafety, buildEvidenceExplanation } from "../shared/safety";
 
 describe("medicine normalization", () => {
   it("resolves Indian aliases and fixed-dose combinations", () => {
-    expect(normalizeBrandQuery("augmentin625")[0]?.brandName).toBe("Augmentin 625");
+    expect(brands.every((brand) => brand.sourceType === "India-market curated dataset" || brand.sourceType === "Tata 1mg India-market reference")).toBe(true);
+    expect(brands.every((brand) => (brand.sourceUrls?.length ?? 0) > 0)).toBe(true);
+    expect(uniqueSaltCount).toBe(17);
+    expect(catalogAudit).toHaveLength(brands.length);
+    expect(validateCatalogAudit(brands)).toBe(true);
+    expect(normalizeBrandQuery("augmentin625")[0]?.brandName).toBe("Augmentin 625 Duo");
+    expect(normalizeBrandQuery("clavam625")[0]?.salts).toHaveLength(2);
+    expect(normalizeBrandQuery("moxikind cv")[0]?.salts[0]?.salt).toBe("Amoxicillin");
     expect(normalizeBrandQuery("dolo")[0]?.salts[0]?.salt).toBe("Paracetamol");
     expect(normalizeBrandQuery("combiflam")[0]?.salts).toHaveLength(2);
     expect(normalizeBrandQuery("ecosprin")[0]?.salts[0]?.salt).toBe("Aspirin");
@@ -22,6 +30,8 @@ describe("medicine normalization", () => {
     expect(normalizeBrandQuery("keramycin capsule")[0]?.salts[0]?.strength).toBe("250 mg");
     expect(normalizeBrandQuery("ksdp keramycin")[0]?.salts[0]?.salt).toBe("Azithromycin");
     expect(normalizeBrandQuery("ksdp keramycin")[0]?.region).toBe("Kerala");
+    expect(brands.find((brand) => brand.id === "dolo-650")?.sourceUrls?.[0]).toContain("1mg.com");
+    expect(brands.find((brand) => brand.id === "clavam-625")?.sourceUrls?.[0]).toContain("1mg.com");
   });
 });
 
